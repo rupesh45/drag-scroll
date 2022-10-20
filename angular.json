@@ -1,5 +1,8 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "cli": {
+    "analytics": false
+  },
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
@@ -102,6 +105,37 @@
               "src/styles.scss"
             ],
             "scripts": []
+          }
+        }
+      }
+    },
+    "drag-scroll": {
+      "projectType": "library",
+      "root": "projects/drag-scroll",
+      "sourceRoot": "projects/drag-scroll/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/drag-scroll/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/drag-scroll/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/drag-scroll/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/drag-scroll/src/test.ts",
+            "tsConfig": "projects/drag-scroll/tsconfig.spec.json",
+            "karmaConfig": "projects/drag-scroll/karma.conf.js"
           }
         }
       }

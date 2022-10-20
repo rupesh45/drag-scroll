@@ -1,0 +1,20 @@
+{
+  "name": "simple-drag-scroll",
+  "version": "0.0.1",
+  "description": "For those who want a simple drag and scroll in their angular application",
+  "author": {
+    "name":"Rupesh Kadam",
+    "email": "kadam.rupesh28297@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rupesh45/drag-scroll"
+  },
+  "peerDependencies": {
+    "@angular/common": "^12.1.0",
+    "@angular/core": "^12.1.0"
+  },
+  "dependencies": {
+    "tslib": "^2.2.0"
+  }
+}

@@ -1,0 +1,14 @@
+.drag-scroll {
+    display: flex;
+    overflow-x: auto;
+    cursor: grab;
+    cursor: -webkit-grab;
+  }
+  .drag-scroll.active {
+    cursor: grabbing;
+    cursor: -webkit-grabbing;
+  }
+  
+  .drag-scroll::-webkit-scrollbar {
+    display: none;
+  }

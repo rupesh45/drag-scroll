@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'ds-demo';
+  images = ['demo1','demo2','demo3','demo4','demo1','demo2','demo3','demo4']
+
 }
+ 
