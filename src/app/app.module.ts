@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { DragScrollModule } from 'projects/drag-scroll/src/lib/drag-scroll.module';
+import { DragScrollModule } from 'simple-drag-scroll';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';

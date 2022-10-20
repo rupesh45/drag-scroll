@@ -1,24 +1,67 @@
-# DragScroll
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.1.0.
+# Simple Drag Scroll
 
-## Code scaffolding
+For those who want a simple drag and scroll in their angular application
 
-Run `ng generate component component-name --project drag-scroll` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project drag-scroll`.
-> Note: Don't forget to add `--project drag-scroll` or else it will be added to the default project in your `angular.json` file. 
 
-## Build
 
-Run `ng build drag-scroll` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## Publishing
+## Install
 
-After building your library with `ng build drag-scroll`, go to the dist folder `cd dist/drag-scroll` and run `npm publish`.
 
-## Running unit tests
 
-Run `ng test drag-scroll` to execute the unit tests via [Karma](https://karma-runner.github.io).
+```bash
+  npm i simple-drag-scroll
+```
+    
+## Setup
+You'll need to add DragScrollModule to your application module.
 
-## Further help
+```javascript
+import { DragScrollModule } from 'simple-drag-scroll';
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+...
+
+@NgModule({
+  declarations: [
+    AppComponent
+  ],
+  imports: [
+    DragScrollModule,
+    ...
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+
+export class AppModule {
+}
+```
+Add the dragScroll attribute to a scrollable element:
+
+```javascript
+<dragScroll [gap]="'25px'">
+  <div *ngFor="let image of images">
+    <img style="height: 300px;width:500px" src="assets/{{image}}.jpg" alt="">
+  </div>
+</dragScroll>
+```
+
+```javascript
+<dragScroll [gap]="'25px'">
+      <img style="height: 300px;width:500px" src="assets/demo1.jpg" alt="">
+      <img style="height: 300px;width:500px" src="assets/demo2.jpg" alt="">
+      <img style="height: 300px;width:500px" src="assets/demo3.jpg" alt="">
+      <img style="height: 300px;width:500px" src="assets/demo4.jpg" alt="">
+      <img style="height: 300px;width:500px" src="assets/demo5.jpg" alt="">
+</dragScroll>
+```
+## API Reference
+**DragScrollComponent**
+
+| Name | Type     | Description                | Default |
+| :-------- | :------- | :------------------------- | :---- |
+| `gap` | `@Input` | Gap between your elements |    0px
+
+
+

@@ -1,6 +1,6 @@
 {
   "name": "simple-drag-scroll",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "For those who want a simple drag and scroll in their angular application",
   "author": {
     "name":"Rupesh Kadam",
