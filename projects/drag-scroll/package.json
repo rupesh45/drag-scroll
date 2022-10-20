@@ -1,11 +1,12 @@
 {
   "name": "simple-drag-scroll",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "For those who want a simple drag and scroll in their angular application",
   "author": {
     "name":"Rupesh Kadam",
     "email": "kadam.rupesh28297@gmail.com"
   },
+  "keywords": ["Angular","Drag","Scroll"],
   "repository": {
     "type": "git",
     "url": "https://github.com/rupesh45/drag-scroll"

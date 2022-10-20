@@ -64,4 +64,8 @@ Add the dragScroll attribute to a scrollable element:
 | `gap` | `@Input` | Gap between your elements |    0px
 
 
+## 🔗 Links
+
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/rupesh-kadam-a04206165/)
+
 
