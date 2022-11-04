@@ -62,7 +62,7 @@ Add the dragScroll attribute to a scrollable element:
 | Name | Type     | Description                | Default |
 | :-------- | :------- | :------------------------- | :---- |
 | `gap` | `@Input` | Gap between your elements |    0px
-
+| `clickEvent` | `@Output` | returns index of the clicked element |   
 
 ## 🔗 Links
 
